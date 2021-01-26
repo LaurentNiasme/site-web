@@ -1,0 +1,158 @@
+.mainAbout{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    
+    /* justify-content: center; */
+
+}
+.aboutTitle{
+   margin-bottom: 5%;
+   color: cornflowerblue;
+    font-size: 300%;
+}
+
+.aboutText{
+    background-color:#141b22;
+    padding: 1rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.aboutMainYears{
+    height: 50%;
+    margin-top: 1rem;
+
+}
+
+.mainYearsNavBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: 8%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
+}
+   
+
+.butonYearJob{
+    width: auto;
+    height: 2rem;
+  
+}
+
+.buttonClickYears {
+  /* display: inline-block; */
+  border: none;
+  width: auto;
+  height: 2rem;
+  
+  /* padding: 1rem 2rem; */
+  margin: 0;
+  
+  /* padding-right: 1rem; */
+  text-decoration: none;
+  background: rgb(54, 54, 54);
+  color:cornflowerblue;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+ 
+}
+
+.buttonClickYearsSelected{
+    border-bottom: 0.2rem solid #6495ed ;
+}
+
+.mainTextJob{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    background-color:#141b22;
+    padding: 1rem 1rem 0 1rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.yearsJob{
+    border-bottom: cornflowerblue 0.15rem solid;
+    width: 50%;
+    margin-bottom: 0.1rem;
+}
+
+.listJob{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.2rem;
+
+}
+
+.textJob{
+
+}
+
+
+
+@media (max-width: 800px) {
+    .mainAbout{
+        height: 100%;
+        width: auto;
+       top:3rem;
+       position: absolute;
+        margin-right: 1.2rem;
+        margin-left: 0%;
+    }
+
+    .aboutTitle{
+        margin-bottom: 1%;
+     
+         font-size: 150%;
+     }
+
+     .mainYearsNavBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 8%;
+        margin-bottom: 1rem;
+    }
+    
+     .butonYearJob{
+        width: auto;
+        /* margin-right: 0.8rem; */
+    }
+    
+    .buttonClickYears {
+        /* display: inline-block; */
+        border: none;
+        width: auto;
+        height: 2rem;
+        
+        /* padding: 1rem 2rem; */
+        margin: 0;
+        
+        /* padding-right: 1rem; */
+        text-decoration: none;
+        background: rgb(54, 54, 54);
+        color:cornflowerblue;
+        font-family: sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        transition: background 250ms ease-in-out, 
+                    transform 150ms ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+}

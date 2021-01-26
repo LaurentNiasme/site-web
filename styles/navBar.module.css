@@ -1,0 +1,129 @@
+.nav_bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 5%;
+    height: 100vh;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 20px 0px 10px #2e2e2e13;
+    position: fixed;
+    z-index: 100;
+    
+}
+
+.buton_swith_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 100%;
+    height: 50%;
+   
+}
+
+.buton_nav_bar{
+    margin: 1%;
+    width: 2.5rem;
+    height: 2.5rem;
+   
+    
+
+}
+.image{
+    width: 100%;
+    height: 100%;
+}
+.button_click {
+    display: flex;
+    border: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* text-decoration: none; */
+    color:  cornflowerblue;
+    /* fill: #0069ed; */
+    /* background-color: #0069ed;
+    mix-blend-mode: multiply; */
+    /* filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(0deg) brightness(104%) contrast(50%); */
+    /* color: #ffffff; */
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    cursor: pointer;
+    text-align: center;
+    /* transition: background 250ms ease-in-out, 
+                transform 150ms ease; */
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
+}
+
+
+
+/* button:hover,
+button:focus {
+    background: #0053ba;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+} */
+
+
+
+@media (max-width: 800px) {
+
+    .nav_bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+        width: 100vw;
+        height: 3rem;
+        position: fixed; 
+     /* Position the navbar at the top of the page */
+      
+    }
+    .buton_swith_page{
+        display: flex;
+        flex-direction: row;
+        
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 100%;
+        height: 100%;
+       
+    }
+    .buton_nav_bar{
+        width: 3rem;
+        height: 3rem;
+    }
+    .button_click {
+        display: flex;
+        border: none;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        text-decoration: none;
+        
+        color:  cornflowerblue;
+        font-family: sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        transition: background 250ms ease-in-out, 
+                    transform 150ms ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+ 
+}

@@ -1,0 +1,219 @@
+.main_works{
+    display:flex;
+    flex-direction: column;
+    /* margin-top: 2rem; */
+    width: 100%;
+    height: 100%;
+
+  }
+
+.nav_bar_works{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    /* background-color: brown; */
+    margin-top: 2rem;
+    height: 5%;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.185); */
+}
+
+.button_works, .btn_close_video{
+    
+        /* display: inline-block; */
+        border: none;
+        width: auto;
+        height: 2rem;
+        
+        /* padding: 1rem 2rem; */
+        margin: 0;
+        
+        /* padding-right: 1rem; */
+        text-decoration: none;
+        background: rgb(54, 54, 54);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        color:cornflowerblue;
+        font-family: sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        transition: background 250ms ease-in-out, 
+                    transform 150ms ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+
+}
+.button_works:hover, .btn_close_video:hover {
+  
+    
+
+  }
+
+.button_works_selected{
+    border-bottom: 0.2rem solid cornflowerblue ;
+}
+.title_domain_works {
+    display: flex;
+    width: 50%;
+    font-size: 200%;
+    font-weight: bolder;
+    height: 5%;
+    border-bottom: 00.2rem solid cornflowerblue;
+    margin-bottom: 2rem;
+    /* justify-content: center; */
+    z-index: 0;
+}
+
+.contain_all_image{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.contain_image{
+    display: flex;
+    flex-direction: column;
+    color:black;
+    width: 20rem;
+    margin: 0.5rem;
+    height: 15rem;
+    /* padding: 0.5rem; */
+    /* justify-content: center; */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+}
+
+  
+  .contain_image:hover {
+    /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px ; */
+  
+  }
+.image_of_work, .image_picture {
+    border-radius: 8px 8px 0px 0px;
+}
+
+
+.image_of_work{
+    width: 100%;
+    max-height: 100%;
+    
+   
+}
+
+.image_picture{
+    width: auto;
+    height: 75%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    
+    /* margin: 0.2rem; */
+}
+.image_picture:hover{
+    /* height: 100%; */
+    box-shadow: 0 19px 38px rgba(0,0,0,0.6), 0 15px 12px rgba(0,0,0,0.30);
+}
+
+.title_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    
+}
+.videoWorks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+}
+.player_wrapper {
+    display: flex;
+    /* width: 480px;
+    height: 480px; */
+    justify-content: center;
+    position: relative;
+    /* padding-top: 56.25% Player ratio: 100 / (1280 / 720) */
+    width: 100%;
+    height: 100%;
+   
+  }
+  
+  .iframeVideo{
+        /* left: 35%;
+        top: 0; */
+        /* height: 100%;
+        width: 100%; */
+        width:560px;
+        height:315px; 
+      /* position: absolute; */
+  }
+.btn_video{
+    border: none;
+    width: 8rem;
+    height: 3rem;
+    margin-bottom: 0.2rem;
+    text-decoration: none;
+    background-color: rgb(54, 54, 54);
+    color:cornflowerblue;
+    font-size: 1.5rem;
+    cursor:pointer;
+    text-align: center;  
+}
+
+@media (max-width: 800px) {
+    .main_works{
+
+        margin-top: 8rem;
+       
+      }
+      .player_wrapper {
+        display: flex;
+        width: 400px;
+        height: 300px;
+        /* justify-content: center; */
+        /* position: relative;
+        padding-top: 56.25% Player ratio: 100 / (1280 / 720) */
+        background-color: rebeccapurple;
+      }
+    /* .nav-bar-works{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 2rem;
+        height: 5%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.185);
+        
+    } */
+    .title_domain_works {
+        display: flex;
+        width: 50%;
+        font-size: 150%;
+        font-weight: bolder;
+        height: auto;
+        border-bottom: 00.2rem solid cornflowerblue;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        /* justify-content: center; */
+        z-index: 0;
+    }
+
+    .contain_all_image{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* overflow: auto; */
+       
+        
+    }
+
+}

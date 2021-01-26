@@ -1,0 +1,61 @@
+
+.homePage{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+    overflow-y: none;
+    
+  
+  }
+  
+ 
+  
+  .home-page-main-container{
+  
+  
+  }
+  
+  .homePageContainer{
+    height: 100%;
+    width: 90%;
+    margin-left: 8%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  
+  @media (max-width: 800px) {
+  
+    .home-page-main-container{
+    }
+  
+    .homePageContainer{
+        height: 90%;
+        width: 100%;
+        margin-left: 5%;
+        overflow-y: auto;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+  }
+  
+  @media (max-width: 360px) {
+  }
+  
+  @media (max-width: 375px) {
+  }
+  
+  @media (max-width: 414px) {
+  }
+  
+  
+  
+  
