@@ -6,16 +6,19 @@ import TextJob from './TextJob'
 
 const MainAbout =({worksYears})=> {
 
- 
+    // sauvegarder les données d'un job selon l'année
     const [dataJob, setDataJob] = useState(worksYears[0])
+    //Séelectionner l'année du job
     const [selectedYears, setSelectedYears] = useState(0)
 
+    // Changer l'année du job et sauvegarder de nouvelle donnée reçu
     function handleClick(e, data, idBtn) {
         e.preventDefault();
         setDataJob(data)
         setSelectedYears(idBtn)
     }
 
+    //créer le text explicatif du job
     const createText =()=> {
         return(
             < >
@@ -31,7 +34,7 @@ const MainAbout =({worksYears})=> {
     }
 
    
-    
+    // buton des années
     const createButon = () => {
 
         return(
@@ -64,6 +67,7 @@ const MainAbout =({worksYears})=> {
                 dans plusieurs domaines de la production, tout en développant ma curiosité à rechercher de nouvelles technologies, à apprendre en autodidacte
                 et mon ambition pour évoluer.
             </div>
+            {/* création des boutons et du text */}
             <div className={styleAbout.aboutMainYears}>
                     {createButon()}
                     {dataJob ? createText() : null}

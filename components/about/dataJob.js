@@ -1,4 +1,7 @@
 const worksYears = [
+    // years : année du poste
+    //puce : afficher une puce ou non
+    // underYears, les mois du poste durant l'année
     {
         years: '2020',
         job: [

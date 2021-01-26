@@ -5,14 +5,13 @@ import styleNavBar from '../../styles/navBar.module.css'
 
 
 const ButonNavBar = ({name, route, url, urlIcone, handleClick, nameClick})=> {
-    // const history = useHistory();
     const [overButon, setOverButon] = useState();
     const [nameButon, setNameBUton] = useState(false);
     const [urlIconeButon, setUrlIconeButon] = useState(urlIcone)
 
+// afficher le texte ou une icone
     const mouseOver = ()=> {
         if (window.innerWidth>800){
-
             setUrlIconeButon(null)
             setNameBUton(true)
         }
@@ -21,7 +20,7 @@ const ButonNavBar = ({name, route, url, urlIcone, handleClick, nameClick})=> {
     const mouseIn = () => {
        
     };
-
+    //AFficher l'icone
     const mouseLeave = () => {
         if (window.innerWidth>800){
             setNameBUton(false)
@@ -29,34 +28,16 @@ const ButonNavBar = ({name, route, url, urlIcone, handleClick, nameClick})=> {
         }
     };
 
-    // function handleClick(e) {
-    // e.preventDefault();
-      
-    // //   if (!url){
-    // //      history.push(route);
-    // //   }else{
-
-    // //       return <Redirect to ='https://www.instagram.com/'/>
-    // //   };
-    // }
-
     return(
         <div className= {styleNavBar.buton_nav_bar}>
             <Link href={route} as={(route==="/")? "":`${route}.html`}>
  
             <a className= {styleNavBar.button_click}  onMouseEnter={mouseIn} onMouseLeave={mouseLeave} onMouseOver={mouseOver} onClick={()=>handleClick(name)} >
+            {/* Si la souris est over the buton ou on a sélectionné le bouton on affiche le texte sinon l'icone */}
             { (nameButon || (name===nameClick)) ?  name : <img className={styleNavBar.image} src={urlIconeButon}  alt={name}  />}
             </a>
             </Link>
         
-            {/* <input type="image"  
-            className= {styleNavBar.button_click} 
-            onClick={handleClick} img src={urlIconeButon}  
-            value={nameButon} 
-            onMouseEnter={mouseIn} 
-            onMouseLeave={mouseLeave} 
-            onMouseOver={mouseOver}  /> */}
-            {/* <button onClick={handleClick} /> */}
         </div>
     )
 }

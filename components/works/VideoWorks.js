@@ -9,11 +9,11 @@ const VideoWorks = ({launchVideo, urlVideo, titleVideo}) => {
             <h2 >{titleVideo}</h2>
             <button className={styleWorks.btn_video}  onClick={(e)=>launchVideo(false)}>Fermer</button>
             <div className={styleWorks.player_wrapper}>
+                {/* iframe youtube */}
                 <iframe className={styleWorks.iframeVideo}
                 src={urlVideo}
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
-
                 </iframe>
             </div>
         </div>

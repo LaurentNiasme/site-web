@@ -2,10 +2,9 @@ import React from 'react';
 
 const TextJob =({data, styleAbout}) => {
     
-
     const createTextJob =() => {
-
         return (
+            //Le texte venant des data est envoyé dans le rendu
             <div className={styleAbout.listJob}>
                 {
                     data.text.map((text)=> {
@@ -31,6 +30,7 @@ const TextJob =({data, styleAbout}) => {
         )
     }
     return(
+        
         <div className={styleAbout.mainTextJob}>
             <div className={styleAbout.yearsJob}>
                 {data.underYears}

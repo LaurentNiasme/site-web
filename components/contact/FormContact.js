@@ -1,6 +1,6 @@
 import React from "react";
 import styleContact from '../../styles/contact.module.css';
-
+//props : les données, value taper dans les input text
 const FormContact = ({errorForm,sendEmail,fillContactMessage, email, subject, message, name}) => {
     
     return(

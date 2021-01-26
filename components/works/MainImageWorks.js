@@ -5,32 +5,23 @@ import styleWorks from '../../styles/works.module.css';
 
 const MainImageWorks = ({dataWorks, selectedWorks, launchVideo}) => {
 
+    //handle Click pour lancer la vdéio en récupérant l'uril et le titre de la vidéo
 const handleClickMovie =(urlVideo, titleImage)=> {
-
-    // setVideo({
-    //     urlVideo, titleImage
-    // })
-    // setShowVideo(true)
    return (
     <>
          {launchVideo(true,urlVideo, titleImage )}
     </>
    )
-    
 }
-
+//Création des image en récupérant les données 
     const createImageWorks = () => {
-
         return(
             <div className={styleWorks.contain_all_image}>
                 {dataWorks.filter(works=>works.id===selectedWorks).map(works=>{
-
                     return(
                         <ImageWorks data={works.dataWorksImage} handleClickMovie={handleClickMovie}  />
                     )
                 })}
-                
-                
             </div>
         )
     }
