@@ -16,6 +16,7 @@ const NavBar = ()=> {
                 <ButonNavBar name={"SKills"} route={"/skills"} url={false} urlIcone={"./images/icone_skills.png"} handleClick= {handleClick} nameClick={nameClick}/>
                 <ButonNavBar name={"Works"} route={"/works"} url={false} urlIcone={"./images/icone_works.png"} handleClick= {handleClick} nameClick={nameClick}/>
                 <ButonNavBar name={"Contact"} route={"/contact"} url={false} urlIcone={"./images/icone_contact.png"} handleClick= {handleClick} nameClick={nameClick}/>
+                <ButonNavBar name={"Game"} route={"/game"} url={false} urlIcone={"./images/icone_game_pad.png"} handleClick= {handleClick} nameClick={nameClick}/>
             </div>
         </div>
     )
