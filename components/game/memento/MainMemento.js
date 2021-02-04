@@ -99,36 +99,40 @@ const MainMemento =({dataMemento}) => {
     return (
         
             <div className={mementoStyle.containerMementoGame}>
-                <div className={mementoStyle.title}>
-                Memento
-                </div>
-              
-                <div className={mementoStyle.containerMemento }>
-                    <ZoneMemento nbrColor={nbrColor} start={start} reset={reset} disableReset={disableReset} duosFind={duosFind} dataMemento={dataMemento}/>
-                </div>
-                
-                    <div className={mementoStyle.txtNbrColor}>
-                        {/* {nbrColor-nbrDuosFind} {((nbrColor-nbrDuosFind) === 1) ? 'duo à trouver' : 'duos à trouver'} */}
-                        {txtNbrDuos}
+                <div className={mementoStyle.mainContenerInterface}>
+                    <div className={mementoStyle.title}>
+                    Memento
                     </div>
                 
-                <div className={mementoStyle.containerArrow}>
-                    {start ?  null :  <div onClick={(e)=>onPressDecrease(e)} className={mementoStyle.buton}>
-                            -
-                    </div>}
-                   {start ? null : <div onClick={(e)=>onPressIncrease(e)} className={mementoStyle.buton}>
-                            +
-                    </div>}
-                </div> 
+                    <div className={mementoStyle.containerMemento }>
+                        <ZoneMemento nbrColor={nbrColor} start={start} reset={reset} disableReset={disableReset} duosFind={duosFind} dataMemento={dataMemento}/>
+                    </div>
+                    
+                        <div className={mementoStyle.txtNbrColor}>
+                            {/* {nbrColor-nbrDuosFind} {((nbrColor-nbrDuosFind) === 1) ? 'duo à trouver' : 'duos à trouver'} */}
+                            {txtNbrDuos}
+                        </div>
+                    
+                    <div className={mementoStyle.containerArrow}>
+                        {start ?  null :  <div onClick={(e)=>onPressDecrease(e)} className={mementoStyle.buton}>
+                                -
+                        </div>}
+                    {start ? null : <div onClick={(e)=>onPressIncrease(e)} className={mementoStyle.buton}>
+                                +
+                        </div>}
+                    </div> 
 
-                <div className={mementoStyle.actionPlay}>
-                   {start ? null : <div onClick={(e)=>onPressGo()} className={mementoStyle.buton}>
-                        Jouer
-                    </div>}
-                    <div onClick={(e)=>onPressReset(e)} className={mementoStyle.buton}>
-                        Reset
+                    <div className={mementoStyle.actionPlay}>
+                    {start ? null : <div onClick={(e)=>onPressGo()} className={mementoStyle.buton}>
+                            Jouer
+                        </div>}
+                        <div onClick={(e)=>onPressReset(e)} className={mementoStyle.buton}>
+                            Reset
+                        </div>
                     </div>
+
                 </div>
+                
             </div>
      
     )

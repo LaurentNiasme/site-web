@@ -7,6 +7,13 @@
         width: 100%;
         /* background-color: red; */
     }
+    .mainContenerInterface{
+        display: flex;
+        align-items: center;
+        height: auto;
+        width: auto;
+        flex-direction: column;
+    }
     .title{
         font-size: 4rem;
         font-weight: bolder;
@@ -23,8 +30,8 @@
         background-color: rgb(235, 235, 235);
         margin-Top:2rem;
         margin-Bottom:2rem;
-        width:600px;
-        height: 600px;
+        width:650px;
+        height: 650px;
         border-radius: 25px 5px 25px 5px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
@@ -35,15 +42,15 @@
         flex-Wrap:wrap;
         width:600px;
         height:auto;
-        margin: none;
+ 
         /* align-Items:center; */
         justify-Content:center;
     }
     .case  {
-        width : 92px;
-        height : 92px;
-        margin:2px;
-        margin: none;
+        width : 6rem;
+        height : 6rem;
+        margin:0.05em;
+        
     
     }
     .caseInit {
@@ -107,21 +114,48 @@
     }
 
     
-    @media (max-width: 1200px) {
 
-      }
-      
-      @media (max-width: 1024px) {
+      @media (max-height: 900px) {
+            .containerMementoGame  {
+                margin-top: 0rem;
+         
+            }
+            .containerMemento  {
+                margin-Top:1.5rem;
+                margin-Bottom:1rem;
+                width:480px;
+                height: 480px;
+                border-radius: 25px 5px 25px 5px;
+
+            }
         
-      }
-      @media (max-width: 800px) {
+            .ZoneMemento{
+                width:500px;
+                height:auto;
+                margin: none;
+            }
+            .case  {
+                width : 70px;
+                height : 70px;
+                margin:0.1rem;
+            }
+            .buton  {
+          
+                width : 75px;
+                height : 30px;
+          
+                margin:0.2rem;
+                font-size: 1.5rem;
+               
+            }
+        }
+
+    @media (max-width: 800px) {
         .containerMementoGame  {
             margin-top: 3rem;
-            /* background-color: red; */
+        
         }
         .containerMemento  {
- 
- 
             margin-Top:2rem;
             margin-Bottom:1rem;
             width:370px;
@@ -131,18 +165,15 @@
         }
     
         .ZoneMemento{
-    
             width:400px;
             height:auto;
             margin: none;
-     
         }
         .case  {
             width : 55px;
             height : 55px;
             margin:0.1rem;
-            margin: none;
-        
         }
-        }
+   
+    }
       
